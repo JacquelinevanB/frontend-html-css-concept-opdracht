@@ -1,0 +1,76 @@
+/* -- Table of Contents* -- */
+/* -- 1. Global Styles ---- */
+/* -- 2. Typography ------- */
+/* -- 3. Layout ----------- */
+/* -- 4. Areas ------------ */
+/* ---- 4.1 Header -------- */
+
+/* ---------------------------- 1. Global Styles ---------------------------- */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --han-purple: #5722CD;          /* paars voor de achtergrond en tekst*/
+    --marorelle-blue: #4845E4;      /* blauw voor de achtergrond gradient */
+    --french-rose: #ED4385;         /* roze contrastkleur voor de buttons */
+    --cultured: #F3F6F9;            /* lichtgrijs voor de achtergrond van de projecten */
+    --rich-black-fogra-39: #0C0C0C; /* zwart voor de standaard tekst */
+    --sonic-silver: #7A7A7A;        /* grijs voor de service-tegel tekst */
+    --magnolia: #F2F0FF;            /* lichtpaars voor de zwevende woorden op de achtergrond */
+}
+
+/* ---------------------------- 2. Typography ------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@100;300;400&display=swap');
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', 'Times New Roman', serif;
+}
+
+p {
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+}
+/*font-family: 'Merriweather', serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+/* ---------------------------- 3. Layout ----------------------------------- */
+    /* bepaalde breedte of andere standaard styling zaken */
+.content-container {
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.line {
+    border-bottom: 30px solid white;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---------------------------- 4. Areas ------------------------------------ */
+
+/* ---------------- 4.1 Header ---------------------------------------------- */
+
+header  {
+    background-color: burlywood;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.squiggle {
+    height: 30px;
+    width: 30px;
+    background-color: coral;
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: 50px;
+}
